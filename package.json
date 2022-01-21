@@ -5,12 +5,21 @@
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.24.0",
+    "history": "^5.2.0",
+    "lodash.clone": "^4.5.0",
+    "lodash.isempty": "^4.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "react-router-redux": "^4.0.8",
     "react-scripts": "5.0.0",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
+    "reselect": "^4.1.5",
     "web-vitals": "^2.1.3"
   },
   "scripts": {
@@ -18,7 +27,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "e2e": "cypress run"
+    "e2e": "cypress run",
+    "stub-server": "json-server --watch stub-server/books.json --port 8080"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +49,17 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^9.2.1"
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "axios-mock-adapter": "^1.20.0",
+    "cypress": "^9.2.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "json-server": "^0.17.0",
+    "prettier": "2.5.1",
+    "redux-mock-store": "^1.5.4",
+    "underscore": "^1.13.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
